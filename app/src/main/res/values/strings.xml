@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CurrieStarColts</string>
+    <string name="Welcome">Welcome</string>
+    <string name="greeting">The Future\'s Bright It\'s Blue and White</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="About">About</string>
+</resources>
