@@ -3,7 +3,7 @@
     package="com.example.graemedoran.curriestarcolts">
 
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
 
     <application
         android:allowBackup="true"
@@ -20,8 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Controllers.SquadActivity" />
-
-
     </application>
 
 </manifest>

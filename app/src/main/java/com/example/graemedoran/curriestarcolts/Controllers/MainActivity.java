@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.graemedoran.curriestarcolts.Models.Squad;
 import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTeamButtonClick(View view){
         Intent intent = new Intent(this, SquadActivity.class);
+        Squad squad  = new Squad();
+
 
         startActivity(intent);
     }
@@ -51,3 +54,5 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 }
+
+

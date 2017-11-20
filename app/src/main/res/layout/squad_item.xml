@@ -23,7 +23,7 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/colorPrimaryDark"
@@ -36,9 +36,12 @@
         android:id="@+id/position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/squad_number"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
