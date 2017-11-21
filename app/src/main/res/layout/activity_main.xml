@@ -5,7 +5,8 @@
     android:id="@+id/openPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.graemedoran.curriestarcolts.Controllers.MainActivity">
+    tools:context="com.example.graemedoran.curriestarcolts.Controllers.MainActivity"
+    android:background="#eef442">
 
     <TextView
         android:id="@+id/welcome"
@@ -55,14 +56,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onTeamButtonClick"
-        android:text="TEAM"
+        android:text="@string/squad_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greeting"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintVertical_bias="0.836"
+        tools:text="@string/squad_button" />
 
     <ImageView
         android:id="@+id/club_logo"

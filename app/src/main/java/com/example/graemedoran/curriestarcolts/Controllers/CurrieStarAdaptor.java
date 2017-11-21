@@ -16,10 +16,10 @@ import java.util.ArrayList;
  * Created by graemedoran on 21/11/2017.
  */
 
-public class CurriestarAdaptor extends ArrayAdapter<Player> {
+public class CurrieStarAdaptor extends ArrayAdapter<Player> {
 
 
-    public CurriestarAdaptor(Context context, ArrayList<Player> squads) {
+    public CurrieStarAdaptor(Context context, ArrayList<Player> squads) {
         super(context, 0, squads);
     }
 

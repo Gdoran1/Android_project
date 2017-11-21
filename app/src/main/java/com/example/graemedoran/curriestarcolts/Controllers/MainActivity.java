@@ -7,19 +7,17 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper myDb;
-    EditText editSquadNumber, editName, editPosition, editId;
-    Button btnAddData;
-    Button btnViewAll;
-    Button btnUpdate;
-    Button btnDelete;
+//    EditText editSquadNumber, editName, editPosition, editId;
+//    Button btnAddData;
+//    Button btnViewAll;
+//    Button btnUpdate;
+//    Button btnDelete;
 
 
 
@@ -28,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myDb = new DatabaseHelper (this);
+
+    }
 
 //        editSquadNumber = (EditText)findViewById(R.id.editText_name);
 //        editName = (EditText)findViewById(R.id.editText_surname);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        viewAll();
 //        updateData();
 //        deleteData();
-    }
+
 
     public void onTeamButtonClick(View view){
         Intent intent = new Intent(this, SquadActivity.class);

@@ -5,4 +5,8 @@
     <string name="title_activity_maps">Map</string>
     <string name="About">About</string>
     <string name="Message">This app was designed by Graeme Doran as part of his Software Development Course</string>
+    <string name="addButton">ADD</string>
+    <string name="editButton">EDIT</string>
+    <string name="deleteButton">DELETE</string>
+    <string name="squad_button">TEAM</string>
 </resources>
