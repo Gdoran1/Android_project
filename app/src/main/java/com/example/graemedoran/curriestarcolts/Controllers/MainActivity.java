@@ -12,23 +12,18 @@ import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
 
-//    Button buttonTeam;
-//    Button buttonOpponents;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        buttonTeam = (Button) findViewById(R.id.squad_button);
-//        buttonOpponents = (Button) findViewById(opp_button);
     }
 
     public void onTeamButtonClick(View view){
         Intent intent = new Intent(this, SquadActivity.class);
-//        Squad squad  = new Squad();
-//        setContentView(R.layout.activity_squad);
+
+
         startActivity(intent);
     }
 
