@@ -1,6 +1,5 @@
 package com.example.graemedoran.curriestarcolts.Controllers;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -13,9 +12,14 @@ public class SquadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_squad);
 
-        Intent intent  = getIntent();
+//        Intent intent  = getIntent();
+//
+//        Bundle extras = intent.getExtras();
 
-        Bundle extras = intent.getExtras();
+
+
+
+
 
 //        String Answer = extras.getString("Words");
 //

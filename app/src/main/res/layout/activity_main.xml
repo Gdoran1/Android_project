@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
         app:layout_constraintVertical_bias="0.195"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal" />
+        app:srcCompat="@drawable/img_one" />
 
     <ImageView
         android:id="@+id/team_picture"
@@ -92,6 +92,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greeting"
-        app:srcCompat="@android:drawable/ic_lock_power_off" />
+        app:srcCompat="@drawable/img_team" />
 
 </android.support.constraint.ConstraintLayout>

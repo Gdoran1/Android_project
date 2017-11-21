@@ -7,14 +7,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
-import com.example.graemedoran.curriestarcolts.Models.Squad;
 import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonTeam;
+//    Button buttonTeam;
 //    Button buttonOpponents;
 
 
@@ -22,16 +20,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        buttonTeam = (Button) findViewById(R.id.squad_button);
+//
+//        buttonTeam = (Button) findViewById(R.id.squad_button);
 //        buttonOpponents = (Button) findViewById(opp_button);
     }
 
     public void onTeamButtonClick(View view){
         Intent intent = new Intent(this, SquadActivity.class);
-        Squad squad  = new Squad();
-
-
+//        Squad squad  = new Squad();
+//        setContentView(R.layout.activity_squad);
         startActivity(intent);
     }
 
@@ -46,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
 
         if(item.getItemId() == R.id.action_about){
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-
+            Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         }
         return true;
