@@ -52,13 +52,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+TABLE_NAME,null);
         return res;
     }
-    public boolean updateData(String id,String name,String surname, String marks){
+    public boolean updateData(String id,String squad_number, String name, String position){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_1,id);
-        contentValues.put(COL_2,name);
-        contentValues.put(COL_3,surname);
-        contentValues.put(COL_4,marks);
+        contentValues.put(COL_2,squad_number);
+        contentValues.put(COL_3,name);
+        contentValues.put(COL_4,position);
         db.update(TABLE_NAME,contentValues,"id = ?",new String[]{ id } );
         return true;
     }

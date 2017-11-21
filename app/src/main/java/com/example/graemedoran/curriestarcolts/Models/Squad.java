@@ -33,6 +33,8 @@ public class Squad {
 
     public ArrayList<Player> getList() {
         return new ArrayList<Player>(list);}
+
+
 }
 
 
