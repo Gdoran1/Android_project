@@ -11,7 +11,7 @@
     <ListView
         android:id="@+id/list"
         android:layout_width="wrap_content"
-        android:layout_height="700dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,44 +25,17 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="24dp"
         android:background="@color/colorAccent"
         android:onClick="getPlayer"
         android:text="@string/addButton"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list"
         tools:text="@string/addButton" />
 
-    <Button
-        android:id="@+id/button_edit"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@color/colorAccent"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:text="@string/editButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_delete"
-        app:layout_constraintStart_toEndOf="@+id/button_add"
-        app:layout_constraintTop_toBottomOf="@+id/list"
-        tools:text="@string/editButton" />
-
-    <Button
-        android:id="@+id/button_delete"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:background="@color/colorAccent"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="@string/deleteButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list"
-        tools:text="@string/deleteButton" />
 </android.support.constraint.ConstraintLayout>
 
 
