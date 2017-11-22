@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "myTeam.db";
+    public static final String DATABASE_NAME = "myTeamDb";
     public static final String TABLE_NAME = "mySquad_data";
     public static final String COL_1 = "ID";
     public static final String COL_2 = "SQUAD NUMBER";
@@ -41,17 +41,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertData(String squad_number, String name, String position, String contact,
-                              String address, String e_mail, String telephone){
+    public boolean insertData(String squad_number, String name, String position){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_2,squad_number);
         contentValues.put(COL_3,name);
         contentValues.put(COL_4,position);
-        contentValues.put(COL_5,contact);
-        contentValues.put(COL_6,address);
-        contentValues.put(COL_7,e_mail);
-        contentValues.put(COL_8,telephone);
 
         long result = db.insert(TABLE_NAME,null, contentValues);
         if (result == -1)

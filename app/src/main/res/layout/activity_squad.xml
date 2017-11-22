@@ -28,7 +28,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="24dp"
         android:background="@color/colorAccent"
-        android:onClick="getPlayer"
+        android:onClick="buttonClick"
         android:text="@string/addButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

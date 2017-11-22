@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Controllers.SquadActivity" />
-        <activity android:name=".Controllers.ProfileActivity"></activity>
+        <activity android:name=".Controllers.ProfileActivity" />
+        <activity android:name=".Controllers.PlayerActivity"></activity>
     </application>
 
 </manifest>
