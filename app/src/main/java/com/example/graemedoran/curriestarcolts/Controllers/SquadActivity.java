@@ -52,15 +52,27 @@ public class SquadActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PlayerActivity.class);
         startActivity(intent);
 
-//        boolean isInserted = myTeamDb.insertData(
-//                editSquadNumber.getText().toString(), editName.getText().toString(),
-//                editPosition.getText().toString(), editContact.getText().toString(),
-//                editAddress.getText().toString(), editE_mail.getText().toString(),
-//                editTelephone.getText().toString());
-//        if (isInserted = true)
-//            Toast.makeText(SquadActivity.this, "Data Entered", Toast.LENGTH_LONG).show();
-//        else
-//            Toast.makeText(SquadActivity.this, "Data Not Entered", Toast.LENGTH_LONG).show();
     }
-}
 
+
+
+//        public void addPlayer() {
+//            btnAddData.setOnClickListener(
+//                    new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//
+//                            boolean isInserted = myTeamDb.insertData(
+//                                    editSquadNumber.getText().toString(), editName.getText().toString(),
+//                                    editPosition.getText().toString(), editContact.getText().toString(),
+//                                    editAddress.getText().toString(), editE_mail.getText().toString(),
+//                                    editTelephone.getText().toString());
+//                            if (isInserted = true)
+//                                Toast.makeText(SquadActivity.this, "Data Entered", Toast.LENGTH_LONG).show();
+//                            else
+//                                Toast.makeText(SquadActivity.this, "Data Not Entered", Toast.LENGTH_LONG).show();
+//                        }
+//
+//                    }
+//        }
+}

@@ -15,7 +15,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "myTeamDb";
     public static final String TABLE_NAME = "mySquad_data";
     public static final String COL_1 = "ID";
-    public static final String COL_2 = "SQUAD NUMBER";
+    public static final String COL_2 = "SQUAD_NUMBER";
     public static final String COL_3 = "NAME";
     public static final String COL_4 = "POSITION";
     public static final String COL_5 = "CONTACT";
@@ -25,7 +25,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
+
+        super(context, DATABASE_NAME, null, 2);
+
+        SQLiteDatabase db = this.getReadableDatabase();
     }
 
     @Override

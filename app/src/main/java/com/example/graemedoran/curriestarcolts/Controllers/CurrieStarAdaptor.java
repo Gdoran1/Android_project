@@ -32,14 +32,14 @@ public class CurrieStarAdaptor extends ArrayAdapter<Player> {
 
         Player currentPlayerItem = getItem(position);
 
-        TextView ranking = listItemView.findViewById(R.id.squad_number);
-        ranking.setText(currentPlayerItem.getSquadNumber().toString());
+        TextView squad_number = listItemView.findViewById(R.id.squad_number);
+        squad_number.setText(currentPlayerItem.getSquadNumber().toString());
 
-        TextView title = listItemView.findViewById(R.id.name);
-        title.setText(currentPlayerItem.getName().toString());
+        TextView name = listItemView.findViewById(R.id.name);
+        name.setText(currentPlayerItem.getName().toString());
 
-        TextView year = listItemView.findViewById(R.id.position);
-        year.setText(currentPlayerItem.getPosition().toString());
+        TextView positions = listItemView.findViewById(R.id.position);
+        positions.setText(currentPlayerItem.getPosition().toString());
 
         listItemView.setTag(currentPlayerItem);
 
