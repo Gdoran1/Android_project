@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.graemedoran.curriestarcolts.Controllers.MainActivity"
-    android:background="#eef442">
+    android:background="#FFD700">
 
     <TextView
         android:id="@+id/welcome"

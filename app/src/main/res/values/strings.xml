@@ -16,4 +16,9 @@
     <string name="telephone">Telephone</string>
     <string name="toggle_button">switch</string>
     <string name="edit_button">EDIT</string>
+    <string name="number" />
+    <string name="squad_number" />
+    <string name="team_number">Squad Number</string>
+    <string name="position">Position</string>
+    <string name="addPlayer">Commit</string>
 </resources>
