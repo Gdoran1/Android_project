@@ -10,6 +10,14 @@ public class Player {
     private int squadNumber;
     private String name;
     private String position;
+    private int id;
+
+    public Player(int id, Integer squadNumber, String name, String position) {
+        this.id = id;
+        this.squadNumber = squadNumber;
+        this.name = name;
+        this.position = position;
+    }
 
     public Player(Integer squadNumber, String name, String position){
         this.squadNumber = squadNumber;
@@ -26,6 +34,10 @@ public class Player {
     public String getPosition() {
         return position;}
 
+
+    public int getId() {
+        return id;
+    }
 }
 
 

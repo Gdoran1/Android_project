@@ -1,5 +1,6 @@
 package com.example.graemedoran.curriestarcolts.CurrieStar.Controllers;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,11 +12,10 @@ import com.example.graemedoran.curriestarcolts.R;
 public class ProfileActivity extends MainActivity {
 
     DatabaseHelper myTeamDb;
-    EditText editName, editContact, editAddress, editEmail, editTel, editId;
+    EditText editName, editContact, editAddress, editEmail, editTel;
     Button btnEdit;
     Button btnDelete;
-
-
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,33 +31,19 @@ public class ProfileActivity extends MainActivity {
         btnEdit = (Button)findViewById(R.id.edit_button);
         btnDelete = (Button)findViewById(R.id.delete_button);
 
+        Intent intent = getIntent();
+
+        Bundle extras = intent.getExtras();
+
+        id = extras.getInt("id");
+
     }
     public void deletePlayer(View view){
-                        Integer deletedRows = myTeamDb.deleteData(editId.getText().toString());
+                        Integer deletedRows = myTeamDb.deleteData(Integer.toString(id));
                         if(deletedRows > 0 )
-                            Toast.makeText(ProfileActivity.this, "Data Deleted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ProfileActivity.this, "Data Deleted", Toast.LENGTH_SHORT).show();
                         else
-                            Toast.makeText(ProfileActivity.this, "Failed to Delete", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ProfileActivity.this, "Failed to Delete", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
-
-
-
-//    public void updateData(){
-//
-//        btnEdit.setOnClickListener(
-//                new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        boolean isUpdated = myTeamDb.updateData(editId.getText().toString(),editName.getText().toString(),
-//                                editContact.getText().toString(),editAddress.getText().toString(), editEmail.getText().toString(),
-//                                editTel.getText().toString());
-//                        if(isUpdated == true)
-//                            Toast.makeText(ProfileActivity.this, "Data Updated", Toast.LENGTH_LONG).show();
-//                        else
-//                            Toast.makeText(ProfileActivity.this, "Data Not Updated", Toast.LENGTH_LONG).show();
-//                    }
-//                }
-//        );
-//    }
-
 }

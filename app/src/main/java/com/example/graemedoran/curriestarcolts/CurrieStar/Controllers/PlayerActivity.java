@@ -36,9 +36,10 @@ public class PlayerActivity extends MainActivity {
 
         boolean isInserted = myTeamDb.insertData(squadNumber, name, position);
                         if (isInserted)
-                            Toast.makeText(PlayerActivity.this, "Data Entered", Toast.LENGTH_LONG).show();
+                            Toast.makeText(PlayerActivity.this, "Data Entered", Toast.LENGTH_SHORT).show();
                         else
-                            Toast.makeText(PlayerActivity.this, "Data Not Entered", Toast.LENGTH_LONG).show();
+                            Toast.makeText(PlayerActivity.this, "Data Not Entered", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
     }
 

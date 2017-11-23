@@ -82,7 +82,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     String email = res.getString(6);
                     String telephone = res.getString(7);
 
-                    Player player = new Player(squadNumber, name, position);
+                    Player player = new Player(id, squadNumber, name, position);
                     players.add(player);
 //                    player.setContact(contact);
 //                    player
@@ -92,8 +92,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             }
         }
-
-
         return players;
     }
     public boolean updateData(String id,String squad_number, String name, String position,

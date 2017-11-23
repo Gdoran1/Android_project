@@ -43,11 +43,16 @@ public class SquadActivity extends MainActivity {
 
     public void getPlayer(View listItemSelected) {
         Player selectedPlayer = (Player) listItemSelected.getTag();
-//       Toast.makeText(this, selectedPlayer.getName(), Toast.LENGTH_LONG).show();
+
     }
 
     public void onListItemClick(View view){
         Intent intent = new Intent(this, ProfileActivity.class);
+
+        Player player = (Player) view.getTag();
+
+        intent.putExtra("id", player.getId());
+
         startActivity(intent);
     }
 
@@ -56,26 +61,4 @@ public class SquadActivity extends MainActivity {
         startActivity(intent);
 
     }
-
-
-
-//        public void addPlayer() {
-//            btnAddData.setOnClickListener(
-//                    new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//
-//                            boolean isInserted = myTeamDb.insertData(
-//                                    editSquadNumber.getText().toString(), editName.getText().toString(),
-//                                    editPosition.getText().toString(), editContact.getText().toString(),
-//                                    editAddress.getText().toString(), editE_mail.getText().toString(),
-//                                    editTelephone.getText().toString());
-//                            if (isInserted = true)
-//                                Toast.makeText(SquadActivity.this, "Data Entered", Toast.LENGTH_LONG).show();
-//                            else
-//                                Toast.makeText(SquadActivity.this, "Data Not Entered", Toast.LENGTH_LONG).show();
-//                        }
-//
-//                    }
-//        }
 }
