@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Player;
-import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Squad;
 import com.example.graemedoran.curriestarcolts.R;
 
 import java.util.ArrayList;
@@ -25,14 +24,19 @@ public class SquadActivity extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_squad);
+    }
 
-        Squad squad = new Squad();
-
-        ArrayList<Player> player = squad.getList();
-
-        CurrieStarAdaptor currieStarAdaptor = new CurrieStarAdaptor(this, player);
+    @Override
+    protected void onResume() {
+        super.onResume();
 
         ListView listView =findViewById(R.id.list);
+
+        DatabaseHelper db = new DatabaseHelper(this);
+
+        ArrayList<Player> players = db.getAllData();
+
+        CurrieStarAdaptor currieStarAdaptor = new CurrieStarAdaptor(this, players);
 
         listView.setAdapter(currieStarAdaptor);
     }
