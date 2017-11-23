@@ -1,7 +1,6 @@
-package com.example.graemedoran.curriestarcolts.Controllers;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Controllers;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.example.graemedoran.curriestarcolts.R;
 
@@ -9,7 +8,7 @@ import com.example.graemedoran.curriestarcolts.R;
  * Created by graemedoran on 17/11/2017.
  */
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends MainActivity {
 
         @Override
         protected void  onCreate(Bundle savedInstanceState) {

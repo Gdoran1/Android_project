@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
+        android:layout_width="380dp"
+        android:layout_height="370dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -42,6 +42,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Message"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+        app:srcCompat="@drawable/st_james_park" />
 
 </android.support.constraint.ConstraintLayout>

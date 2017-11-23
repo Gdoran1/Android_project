@@ -10,17 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controllers.AboutActivity" />
-        <activity android:name=".Controllers.MainActivity">
+        <activity android:name=".CurrieStar.Controllers.AboutActivity" />
+        <activity android:name=".CurrieStar.Controllers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Controllers.SquadActivity" />
-        <activity android:name=".Controllers.ProfileActivity" />
-        <activity android:name=".Controllers.PlayerActivity"></activity>
+        <activity android:name=".CurrieStar.Controllers.SquadActivity" />
+        <activity android:name=".CurrieStar.Controllers.ProfileActivity" />
+        <activity android:name=".CurrieStar.Controllers.PlayerActivity"></activity>
     </application>
 
 </manifest>

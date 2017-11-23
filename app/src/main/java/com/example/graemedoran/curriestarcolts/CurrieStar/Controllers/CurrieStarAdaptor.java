@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Controllers;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Controllers;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.graemedoran.curriestarcolts.Models.Player;
+import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Player;
 import com.example.graemedoran.curriestarcolts.R;
 
 import java.util.ArrayList;

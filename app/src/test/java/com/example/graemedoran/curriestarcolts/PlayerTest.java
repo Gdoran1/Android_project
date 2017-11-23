@@ -1,6 +1,6 @@
 package com.example.graemedoran.curriestarcolts;
 
-import com.example.graemedoran.curriestarcolts.Models.Player;
+import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Player;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,20 +1,19 @@
-package com.example.graemedoran.curriestarcolts.Controllers;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Controllers;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.example.graemedoran.curriestarcolts.Models.Player;
-import com.example.graemedoran.curriestarcolts.Models.Squad;
+import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Player;
+import com.example.graemedoran.curriestarcolts.CurrieStar.Models.Squad;
 import com.example.graemedoran.curriestarcolts.R;
 
 import java.util.ArrayList;
 
-public class SquadActivity extends AppCompatActivity {
+public class SquadActivity extends MainActivity {
 
     DatabaseHelper myTeamDb;
     EditText  editSquadNumber, editName, editPosition, editId, editContact, editAddress,

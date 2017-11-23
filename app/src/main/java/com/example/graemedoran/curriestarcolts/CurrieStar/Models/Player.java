@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Models;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Models;
 
 /**
  * Created by graemedoran on 16/11/2017.

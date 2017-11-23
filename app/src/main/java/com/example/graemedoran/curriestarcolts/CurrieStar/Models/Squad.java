@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Models;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Models;
 
 import java.util.ArrayList;
 

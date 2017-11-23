@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Controllers;
+package com.example.graemedoran.curriestarcolts.CurrieStar.Controllers;
 
 import android.content.ContentValues;
 import android.content.Context;
