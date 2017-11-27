@@ -101,6 +101,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_red_light"
+        android:onClick="onOpponetsButtonClick"
         android:text="@string/opposition"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

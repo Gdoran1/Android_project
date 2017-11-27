@@ -1,10 +1,12 @@
 package com.example.graemedoran.curriestarcolts.Opposition.OppModels;
 
+import java.io.Serializable;
+
 /**
  * Created by graemedoran on 27/11/2017.
  */
 
-public class Team {
+public class Team implements Serializable{
 
     private int id;
     private String team_name;
@@ -23,11 +25,14 @@ public class Team {
     }
 
 
-    public Team(String team_name, String contact);
+    public Team(String team_name, String contact) {
+        this.team_name = team_name;
+        this.contact = contact;
+    }
 
     public Integer getId() {return id;}
 
-    public String getName() {return team_name};
+    public String getName() {return team_name;}
 
     public String getContact(){return contact;}
 

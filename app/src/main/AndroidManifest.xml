@@ -6,7 +6,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon_img"
-        android:label="@String/curriestarcolts"
+        android:label="Currie Star Colts"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,7 +22,8 @@
         <activity android:name=".CurrieStar.Controllers.ProfileActivity" />
         <activity android:name=".CurrieStar.Controllers.PlayerActivity" />
         <activity android:name=".Opposition.OppControllers.OpponentsActivity" />
-        <activity android:name=".Opposition.OppControllers.DetailsActivity"></activity>
+        <activity android:name=".Opposition.OppControllers.DetailsActivity" />
+        <activity android:name=".Opposition.OppControllers.OppTeamActivity"></activity>
     </application>
 
 </manifest>

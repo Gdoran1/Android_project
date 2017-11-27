@@ -8,7 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.graemedoran.curriestarcolts.Opposition.OppControllers.OpponentsActivity;
+import com.example.graemedoran.curriestarcolts.Opposition.OppControllers.OppTeamActivity;
 import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onOpponentsButtonClick(View view) {
-        Intent intent = new Intent(this, OpponentsActivity);
+   public void onOpponetsButtonClick(View view){
+        Intent intent = new Intent(this, OppTeamActivity.class);
         startActivity(intent);
-    }
+   }
+
 
 
     @Override
