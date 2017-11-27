@@ -40,6 +40,12 @@ public class PlayerActivity extends MainActivity {
                         else
                             Toast.makeText(PlayerActivity.this, "Data Not Entered", Toast.LENGTH_SHORT).show();
                         finish();
+//        if(editText.length() !=0) {
+//            AddData(newEntry);
+//            editText.setText("");
+//        } else {
+//            Toast.makeText(ProfileActivity.this,"All text fields must be filled!", Toast.LENGTH_LONG).show();
+//        }
                     }
     }
 

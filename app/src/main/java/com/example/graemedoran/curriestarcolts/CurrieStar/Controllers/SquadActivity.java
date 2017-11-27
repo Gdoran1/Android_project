@@ -51,7 +51,7 @@ public class SquadActivity extends MainActivity {
 
         Player player = (Player) view.getTag();
 
-        intent.putExtra("id", player.getId());
+        intent.putExtra("player", player);
 
         startActivity(intent);
     }

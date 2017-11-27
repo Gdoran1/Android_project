@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_4 = "POSITION";
     public static final String COL_5 = "CONTACT";
     public static final String COL_6 = "ADDRESS";
-    public static final String COL_7 = "E-MAIL";
+    public static final String COL_7 = "E_MAIL";
     public static final String COL_8 = "TELEPHONE";
 
 
@@ -82,10 +82,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     String email = res.getString(6);
                     String telephone = res.getString(7);
 
-                    Player player = new Player(id, squadNumber, name, position);
+                    Player player = new Player(id, squadNumber, name, position, contact,address,email,telephone);
                     players.add(player);
-//                    player.setContact(contact);
-//                    player
+
 
 
                 }while(res.moveToNext());
@@ -94,7 +93,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return players;
     }
-    public boolean updateData(String id,String squad_number, String name, String position,
+    public boolean updateData(int id,int squad_number, String name, String position,
                               String contact, String address, String e_mail, String telephone){
         SQLiteDatabase myTeamDb = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -106,7 +105,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL_6,address);
         contentValues.put(COL_7,e_mail);
         contentValues.put(COL_8,telephone);
-        myTeamDb.update(TABLE_NAME,contentValues,"id = ?",new String[]{ id } );
+        myTeamDb.update(TABLE_NAME,contentValues,"id = ?", new String[]{ String.valueOf(id) });
         return true;
     }
 
