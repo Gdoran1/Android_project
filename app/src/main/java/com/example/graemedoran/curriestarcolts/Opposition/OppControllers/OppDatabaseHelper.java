@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.graemedoran.curriestarcolts.Opposition.Team;
+import com.example.graemedoran.curriestarcolts.Opposition.OppModels.Team;
 
 import java.util.ArrayList;
 

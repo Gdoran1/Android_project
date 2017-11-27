@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Opposition;
+package com.example.graemedoran.curriestarcolts.Opposition.OppModels;
 
 /**
  * Created by graemedoran on 27/11/2017.

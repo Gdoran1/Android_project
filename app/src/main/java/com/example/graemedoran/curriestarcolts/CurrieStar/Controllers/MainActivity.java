@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.graemedoran.curriestarcolts.Opposition.OppControllers.OpponentsActivity;
 import com.example.graemedoran.curriestarcolts.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SquadActivity.class);
         startActivity(intent);
     }
+
+    public void onOpponentsButtonClick(View view) {
+        Intent intent = new Intent(this, OpponentsActivity);
+        startActivity(intent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

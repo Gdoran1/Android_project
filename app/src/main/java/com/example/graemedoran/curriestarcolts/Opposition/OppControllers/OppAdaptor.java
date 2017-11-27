@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.graemedoran.curriestarcolts.Opposition.Team;
+import com.example.graemedoran.curriestarcolts.Opposition.OppModels.Team;
 import com.example.graemedoran.curriestarcolts.R;
 
 import java.util.ArrayList;

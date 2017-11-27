@@ -1,4 +1,4 @@
-package com.example.graemedoran.curriestarcolts.Opposition;
+package com.example.graemedoran.curriestarcolts.Opposition.OppModels;
 
 import java.util.ArrayList;
 
