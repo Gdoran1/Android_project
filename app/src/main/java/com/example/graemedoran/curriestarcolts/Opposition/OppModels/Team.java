@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by graemedoran on 27/11/2017.
  */
 
-public class Team implements Serializable{
+public class Team implements Serializable {
 
     private int id;
     private String team_name;

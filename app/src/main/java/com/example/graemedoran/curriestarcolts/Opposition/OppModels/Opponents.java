@@ -10,11 +10,11 @@ public class Opponents {
 
     private ArrayList<Team> list;
 
-    public Opponents(){
+    public Opponents() {
         list = new ArrayList<Team>();
         list.add(new Team("Currie FC Colts", "David Newman"));
         list.add(new Team("Duns Juniors", "Paul Matthewson"));
-        list.add(new Team("Eniburgh South Cobras", "Danny Boyle"));
+        list.add(new Team("Edinburgh South Cobras", "Danny Boyle"));
         list.add(new Team("Haddington Athletic CFC", "Elaine Fortune"));
         list.add(new Team("Lasswade Thistle Rose", "Derek Black"));
         list.add(new Team("Leith Athletic Colts", "Michael Rafferty"));

@@ -5,13 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 
 import com.example.graemedoran.curriestarcolts.CurrieStar.Controllers.MainActivity;
 import com.example.graemedoran.curriestarcolts.Opposition.OppModels.Team;
 import com.example.graemedoran.curriestarcolts.R;
-
-import java.util.ArrayList;
 
 public class OppTeamActivity extends MainActivity {
 
@@ -27,20 +24,20 @@ public class OppTeamActivity extends MainActivity {
         setContentView(R.layout.activity_opp_team);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        ListView listView =findViewById(R.id.list);
-
-        OppDatabaseHelper db = new OppDatabaseHelper(this);
-
-        ArrayList<Team> teams = db.getAllData();
-
-        OppAdaptor oppAdaptor = new OppAdaptor(this, teams);
-
-        listView.setAdapter(oppAdaptor);
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//
+//        ListView listView =findViewById(R.id.list);
+//
+//        OppDatabaseHelper db = new OppDatabaseHelper(this);
+//
+//        ArrayList<Team> teams = db.getAllData();
+//
+//        OppAdaptor oppAdaptor = new OppAdaptor(this, teams);
+//
+//        listView.setAdapter(oppAdaptor);
+//    }
     public void getTeam(View listItemSelected) {
         Team selectedTeam = (Team) listItemSelected.getTag();
 

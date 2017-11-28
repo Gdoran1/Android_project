@@ -12,28 +12,24 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Welcome"
+        android:layout_marginTop="50dp"
+        android:text="@string/CSC"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.014"
-        tools:text="@string/Welcome" />
+        tools:text="@string/CSC" />
 
     <TextView
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="212dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="cursive"
         android:text="@string/greeting"
         android:textAlignment="center"
@@ -42,10 +38,9 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome"
-        app:layout_constraintVertical_bias="0.417" />
+        app:layout_constraintTop_toBottomOf="@+id/team_picture"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/squad_button"
@@ -54,42 +49,26 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:onClick="onTeamButtonClick"
         android:text="@string/squad_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
         tools:text="@string/squad_button" />
 
     <ImageView
-        android:id="@+id/club_logo"
-        android:layout_width="296dp"
-        android:layout_height="264dp"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/team_picture"
+        android:layout_width="495dp"
+        android:layout_height="403dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/greeting"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
-        app:layout_constraintVertical_bias="0.49"
-        app:srcCompat="@drawable/img_one" />
-
-    <ImageView
-        android:id="@+id/team_picture"
-        android:layout_width="413dp"
-        android:layout_height="324dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/squad_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/greeting"
-        app:layout_constraintVertical_bias="0.823"
         app:srcCompat="@drawable/meggetland" />
 
     <Button
@@ -108,7 +87,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toEndOf="@+id/squad_button"
-        app:layout_constraintTop_toBottomOf="@+id/team_picture"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/greeting" />
 
 </android.support.constraint.ConstraintLayout>

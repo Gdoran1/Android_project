@@ -23,4 +23,7 @@
     <string name="addPlayer">Commit</string>
     <string name="opposition">Opponents</string>
     <string name="new_team">new_team</string>
+    <string name="CSC">Currie Star Colts Season 17/18</string>
+    <string name="team">New Team</string>
+    <string name="newTeam">Team Name</string>
 </resources>
