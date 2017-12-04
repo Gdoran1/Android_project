@@ -15,9 +15,8 @@ import java.util.ArrayList;
 
 public class OppTeamActivity extends MainActivity {
 
-    OppDatabaseHelper myTeamDb;
-    EditText editName, editId, editContact, editAddress,
-            editE_mail, editTelephone, editLocation;
+    OppDatabaseHelper myOppDb;
+    EditText editName, editId, editContact, editE_mail, editTelephone, editLocation;
     Button btnNew_Team;
 
 
@@ -31,34 +30,26 @@ public class OppTeamActivity extends MainActivity {
     protected void onResume() {
         super.onResume();
 
-        ListView listView =findViewById(R.id.list);
-
+        ListView listView = findViewById(R.id.listView);
         OppDatabaseHelper db = new OppDatabaseHelper(this);
-
         ArrayList<Team> teams = db.getAllData();
-
         OppAdaptor oppAdaptor = new OppAdaptor(this, teams);
-
         listView.setAdapter(oppAdaptor);
     }
 
     public void getTeam(View listItemSelected) {
         Team selectedTeam = (Team) listItemSelected.getTag();
-
     }
 
     public void onListItemClick(View view){
         Intent intent = new Intent(this, DetailsActivity.class);
-
         Team team = (Team) view.getTag();
-
         intent.putExtra("team", team);
-
         startActivity(intent);
     }
-
+    
     public void buttonClick(View view) {
-        Intent intent = new Intent(this, DetailsActivity.class);
+        Intent intent = new Intent(this, OpponentsActivity.class);
         startActivity(intent);
 
     }

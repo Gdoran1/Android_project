@@ -32,7 +32,7 @@ public class Team implements Serializable {
 
     public Integer getId() {return id;}
 
-    public String getName() {return team_name;}
+    public String getTeam_Name() {return team_name;}
 
     public String getContact(){return contact;}
 

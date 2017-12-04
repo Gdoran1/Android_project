@@ -9,7 +9,7 @@
     tools:context="com.example.graemedoran.curriestarcolts.Opposition.OppControllers.OpponentsActivity">
 
     <EditText
-        android:id="@+id/new_team_name"
+        android:id="@+id/input_team_name"
         android:layout_width="350dp"
         android:layout_height="80dp"
         android:layout_marginEnd="8dp"
@@ -18,7 +18,7 @@
         android:ems="10"
         android:hint="@string/newTeam"
         android:inputType="textPersonName"
-        android:text="@string/newTeam"
+        android:textAlignment="center"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
         tools:text="@string/newTeam" />
 
     <EditText
-        android:id="@+id/contact_name"
+        android:id="@+id/input_contact_name"
         android:layout_width="350dp"
         android:layout_height="80dp"
         android:layout_marginEnd="8dp"
@@ -36,16 +36,16 @@
         android:ems="10"
         android:hint="@string/Contact"
         android:inputType="none|textPersonName"
-        android:text="@string/Contact"
+        android:textAlignment="center"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_team_name"
+        app:layout_constraintTop_toBottomOf="@+id/input_team_name"
         tools:text="@string/Contact" />
 
     <Button
-        android:id="@+id/add_team"
+        android:id="@+id/butto_add_team"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,10 +54,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_green_dark"
+        android:onClick="addTeam"
         android:text="@string/new_team"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contact_name"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintTop_toBottomOf="@+id/input_contact_name"
+        app:layout_constraintVertical_bias="0.208"
+        tools:text="@string/new_team" />
 </android.support.constraint.ConstraintLayout>

@@ -13,8 +13,8 @@ import com.example.graemedoran.curriestarcolts.R;
 
 public class DetailsActivity extends MainActivity {
 
-    OppDatabaseHelper myTeamDb;
-    EditText editName, editContact, editAddress, editEmail, editTel,editLocation;
+    OppDatabaseHelper myOppDb;
+    EditText editName, editContact, editEmail, editTel, editLocation;
     Button btnEdit;
     Button btnDelete;
     private Team team;
@@ -24,7 +24,7 @@ public class DetailsActivity extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        myTeamDb = new OppDatabaseHelper (this);
+        myOppDb = new OppDatabaseHelper (this);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -34,8 +34,6 @@ public class DetailsActivity extends MainActivity {
         editName.setText(team.getName());
         editContact = (EditText)findViewById(R.id.editText_contact);
         editContact.setText(team.getContact());
-        editAddress = (EditText)findViewById(R.id.editText_address);
-//        editAddress.setText(team.getAddress());
         editEmail = (EditText)findViewById(R.id.editText_email);
         editEmail.setText(team.getE_Mail());
         editTel = (EditText)findViewById(R.id.editText_tel);
@@ -46,8 +44,8 @@ public class DetailsActivity extends MainActivity {
         btnDelete = (Button)findViewById(R.id.delete_button);
     }
 
-    public void deletePlayer(View view){
-        Integer deletedRows = myTeamDb.deleteData(Integer.toString(team.getId()));
+    public void deleteTeam(View view){
+        Integer deletedRows = myOppDb.deleteData(Integer.toString(team.getId()));
         if(deletedRows > 0 )
             Toast.makeText(DetailsActivity.this, "Data Deleted", Toast.LENGTH_SHORT).show();
         else
@@ -55,16 +53,15 @@ public class DetailsActivity extends MainActivity {
         finish();
 
     }
-//    public void updateDetails(View view) {
-//        String name = editteam_Name.getText().toString();
-//        String contact = editContact.getText().toString();
-//        String address = editAddress.getText().toString();
-//        String email = editEmail.getText().toString();
-//        String tel = editTel.getText().toString();
-//        String location = editLocation.getText().toString();
-//
-//
-//        myTeamDb.updateData(team.getId(), name, contact, address, email, tel, location);
-//        finish();
-//    }
+    public void updateDetails(View view) {
+        String team_name = editName.getText().toString();
+        String contact = editContact.getText().toString();
+        String email = editEmail.getText().toString();
+        String tel = editTel.getText().toString();
+        String location = editLocation.getText().toString();
+
+
+        myOppDb.updateData(team.getId(), team_name, contact, email, tel, location);
+        finish();
+    }
 }

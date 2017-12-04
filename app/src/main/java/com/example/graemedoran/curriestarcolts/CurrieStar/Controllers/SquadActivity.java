@@ -48,11 +48,8 @@ public class SquadActivity extends MainActivity {
 
     public void onListItemClick(View view){
         Intent intent = new Intent(this, ProfileActivity.class);
-
         Player player = (Player) view.getTag();
-
         intent.putExtra("player", player);
-
         startActivity(intent);
     }
 

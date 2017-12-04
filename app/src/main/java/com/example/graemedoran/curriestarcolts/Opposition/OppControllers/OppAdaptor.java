@@ -32,7 +32,7 @@ public class OppAdaptor extends ArrayAdapter<Team> {
         Team currentTeamItem = getItem(position);
 
 
-        TextView name = listItemView.findViewById(R.id.name);
+        TextView name = listItemView.findViewById(R.id.team_name);
         name.setText(currentTeamItem.getName().toString());
 
         TextView positions = listItemView.findViewById(R.id.contact);

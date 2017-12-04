@@ -27,4 +27,6 @@
     <string name="team">New Team</string>
     <string name="newTeam">Team Name</string>
     <string name="Location">Location</string>
+    <string name="mess">this app was designed and built as part of his Software Developement Course @ CodeClan</string>
+    <string name="message2">This App was designed and built by Graeme Doran as part of his Software Development Course @ CodeClan Edinburgh</string>
 </resources>

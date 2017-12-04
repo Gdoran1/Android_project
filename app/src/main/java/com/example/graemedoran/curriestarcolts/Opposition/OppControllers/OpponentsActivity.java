@@ -10,43 +10,35 @@ import com.example.graemedoran.curriestarcolts.CurrieStar.Controllers.MainActivi
 import com.example.graemedoran.curriestarcolts.R;
 
 public class OpponentsActivity extends MainActivity {
-    OppDatabaseHelper myTeamDb;
-    EditText  editTeam_Name, editContact;
-    Button btnAddNew_Team;
+
+    OppDatabaseHelper myOppDb;
+    EditText  editInput_Team_Name, editInput_Contact_Name;
+    Button btnAdd_Team;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opponents);
-        myTeamDb = new OppDatabaseHelper(this);
+        myOppDb = new OppDatabaseHelper(this);
 
-
-        editTeam_Name = (EditText)findViewById(R.id.new_team_name);
-        editContact = (EditText)findViewById(R.id.contact_name);
-
-        btnAddNew_Team = (Button)findViewById(R.id.add_new_team);
-
-
+        editInput_Team_Name = (EditText)findViewById(R.id.input_team_name);
+        editInput_Contact_Name = (EditText)findViewById(R.id.input_contact_name);
+        btnAdd_Team = (Button)findViewById(R.id.add_new_team);
     }
 
-    public void addPlayer(View view) {
-        String team_name = editTeam_Name.getText().toString();
-        String contact = editContact.getText().toString();
+    public void addTeam(View view) {
+        String team_name = editInput_Team_Name.getText().toString();
+        String contact = editInput_Contact_Name.getText().toString();
 
-
-        boolean isInserted = myTeamDb.insertData( team_name, contact);
+        boolean isInserted = myOppDb.insertData(team_name, contact);
         if (isInserted)
             Toast.makeText(OpponentsActivity.this, "Data Entered", Toast.LENGTH_SHORT).show();
         else
             Toast.makeText(OpponentsActivity.this, "Data Not Entered", Toast.LENGTH_SHORT).show();
         finish();
-//        if(editText.length() !=0) {
-//            AddData(newEntry);
-//            editText.setText("");
-//        } else {
-//            Toast.makeText(ProfileActivity.this,"All text fields must be filled!", Toast.LENGTH_LONG).show();
-//        }
+
+
     }
 }
 

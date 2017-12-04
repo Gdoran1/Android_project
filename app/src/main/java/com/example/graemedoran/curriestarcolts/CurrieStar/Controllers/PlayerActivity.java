@@ -25,8 +25,6 @@ public class PlayerActivity extends MainActivity {
         editName = (EditText)findViewById(R.id.input_name);
         editPosition = (EditText)findViewById(R.id.input_position);
         btnAddPlayer = (Button)findViewById(R.id.button_add_player);
-
-
     }
 
     public void addPlayer(View view) {
@@ -40,13 +38,13 @@ public class PlayerActivity extends MainActivity {
                         else
                             Toast.makeText(PlayerActivity.this, "Data Not Entered", Toast.LENGTH_SHORT).show();
                         finish();
-//        if(editText.length() !=0) {
-//            AddData(newEntry);
-//            editText.setText("");
-//        } else {
-//            Toast.makeText(ProfileActivity.this,"All text fields must be filled!", Toast.LENGTH_LONG).show();
-//        }
-                    }
-    }
+//                        if(editText.length() !=0) {
+//                           AddData(newEntry);
+//                            editText.setText("");
+//                        } else {
+//                            Toast.makeText(ProfileActivity.this,"All text fields must be populated!", Toast.LENGTH_LONG).show();
+//                         }
+         }
+}
 
 
